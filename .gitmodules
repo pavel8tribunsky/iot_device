@@ -1,0 +1,6 @@
+[submodule "firmware/common/ic_drivers"]
+	path = firmware/common/ic_drivers
+	url = https://github.com/pavel8tribunsky/ic_drivers.git
+[submodule "firmware/common/ioLibrary_Driver"]
+	path = firmware/common/ioLibrary_Driver
+	url = https://github.com/Wiznet/ioLibrary_Driver.git

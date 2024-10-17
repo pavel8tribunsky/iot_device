@@ -1,0 +1,30 @@
+{
+    "editor.fontSize": 13,
+    "editor.formatOnSave": true,
+    "clang-format.fallbackStyle": "Google",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [
+        80
+    ],
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.language.c.fallbackStyle": "google",
+    "clang-format.language.c.style": "file",
+    "clang-format.language.cpp.style": "file",
+    "clang-format.language.cpp.fallbackStyle": "google",
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Ninja",
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "CMakeToolchain.cmake"
+    },
+    "cmake.saveBeforeBuild": true,
+    "git.openRepositoryInParentFolders": "never",
+    "explorer.confirmDelete": false,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cortex-debug.armToolchainPath": "C:/arm_development_tools/arm_gnu_toolchain-13.2.1/bin",
+    "cortex-debug.openocdPath": "C:/arm_development_tools/openocd-0.12.0/bin/openocd.exe",
+    "files.associations": {
+        "usart.h": "c"
+    }
+}
