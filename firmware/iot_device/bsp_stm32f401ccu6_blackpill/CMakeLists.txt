@@ -12,6 +12,8 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 add_executable(
         ${EXECUTABLE}
 		../application/app_general.c
+		core/src/board_specific.c
+		core/Src/crc.c
 		core/Src/gpio.c
 		core/Src/main.c
 		core/Src/spi.c
@@ -21,7 +23,6 @@ add_executable(
 		core/Src/sysmem.c
 		core/Src/system_stm32f4xx.c
 		core/Src/usart.c
-		core/src/board_specific.c
 		core/startup_stm32f401xc.s
 		../../common/ic_drivers/src/sx1276/sx1276.c
 		../../common/ioLibrary_Driver/Ethernet/W5500/w5500.c
@@ -30,6 +31,7 @@ add_executable(
 		../../common/ioLibrary_Driver/Internet/DHCP/dhcp.c
 		../../common/ioLibrary_Driver/Internet/DNS/dns.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
