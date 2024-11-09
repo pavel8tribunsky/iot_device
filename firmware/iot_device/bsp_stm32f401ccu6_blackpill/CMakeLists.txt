@@ -12,12 +12,14 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 add_executable(
         ${EXECUTABLE}
 		../application/app_general.c
-		core/src/board_specific.c
+		core/Src/board_specific.c
 		core/Src/crc.c
+		core/Src/freertos.c
 		core/Src/gpio.c
 		core/Src/main.c
 		core/Src/spi.c
 		core/Src/stm32f4xx_hal_msp.c
+		core/Src/stm32f4xx_hal_timebase_tim.c
 		core/Src/stm32f4xx_it.c
 		core/Src/syscalls.c
 		core/Src/sysmem.c
@@ -30,6 +32,16 @@ add_executable(
 		../../common/ioLibrary_Driver/Ethernet/wizchip_conf.c
 		../../common/ioLibrary_Driver/Internet/DHCP/dhcp.c
 		../../common/ioLibrary_Driver/Internet/DNS/dns.c
+		drivers/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c
+		drivers/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
+		drivers/FreeRTOS/Source/portable/MemMang/heap_4.c
+		drivers/FreeRTOS/Source/croutine.c
+		drivers/FreeRTOS/Source/event_groups.c
+		drivers/FreeRTOS/Source/list.c
+		drivers/FreeRTOS/Source/queue.c
+		drivers/FreeRTOS/Source/stream_buffer.c
+		drivers/FreeRTOS/Source/tasks.c
+		drivers/FreeRTOS/Source/timers.c		
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
@@ -71,6 +83,9 @@ target_include_directories(${EXECUTABLE} PRIVATE
 		core/inc
 		drivers/CMSIS/Device/ST/STM32F4xx/Include
 		drivers/CMSIS/Include
+		drivers/FreeRTOS/Source/CMSIS_RTOS_V2
+		drivers/FreeRTOS/Source/include
+		drivers/FreeRTOS/Source/portable/GCC/ARM_CM4F
 		drivers/STM32F4xx_HAL_Driver/inc
 		drivers/STM32F4xx_HAL_Driver/inc/Legacy
 		drivers/USB/middlewares/st/STM32_USB_Device_Library/Class/CDC/Inc
