@@ -1,52 +1,45 @@
-# Prerequisites
-*.d
+# Eclipse based IDE's
+**/Debug/
+**/Release/
+**/Backup/
+**/*.bak
+**/.~lock.*
+.settings/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# CubeMX
+**/.mxproject
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Intellij Idea, CLion, PyCharm, VS Code
+.idea
+**/*.code-workspace
 
-# Precompiled Headers
-*.gch
-*.pch
+# Temporary
+tmp/
+**/comp/
+build/
+**/__pycache__/
+**/*.drawio.bkp
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Altium Designer
+**/History/
+**/__Previews/
+**/Project Logs*
+**/*Status Report*
+**/*.PrjPcbStructure
+**/*.dat
+**/*.rep
+**/*.extrep
+**/*.ldp
+**/*.drc
+**/*.dsnwrk
+**/*.html
+**/*.htm
+**/*.step
+**/*.rul
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Altium Designer Libraries
+**/*.IntLib
+**/*.LibPkg
+**/*.PcbLib
+**/*.SchLib
