@@ -24,6 +24,7 @@ add_executable(
 		core/Src/system_stm32f4xx.c
 		core/Src/usart.c
 		core/startup_stm32f401xc.s
+		../freertos/kernel/portable/GCC/ARM_CM4F/port.c
 		../../common/ic_drivers/src/sx1276/sx1276.c
 		../../common/ioLibrary_Driver/Ethernet/W5500/w5500.c
 		../../common/ioLibrary_Driver/Ethernet/socket.c
@@ -68,6 +69,9 @@ target_include_directories(${EXECUTABLE} PRIVATE
 		../../common/ioLibrary_Driver/Ethernet
 		../../common/ioLibrary_Driver/Internet/DHCP
 		../../common/ioLibrary_Driver/Internet/DNS
+		../freertos/kernel
+		../freertos/kernel/include
+		../freertos/kernel/portable/GCC/ARM_CM4F
 		core/inc
 		drivers/CMSIS/Device/ST/STM32F4xx/Include
 		drivers/CMSIS/Include
