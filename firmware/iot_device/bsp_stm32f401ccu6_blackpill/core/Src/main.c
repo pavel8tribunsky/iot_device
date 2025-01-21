@@ -104,13 +104,13 @@ int main(void) {
   MX_ADC1_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
-
+  app_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
-    bsp_indication_run();
+    app_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -27,6 +27,7 @@ add_executable(
 		core/Src/usart.c
 		core/startup_stm32f401xc.s
 		../freertos/kernel/portable/GCC/ARM_CM4F/port.c
+		../../common/ic_drivers/src/ds18b20/ds18x20.c
 		../../common/ic_drivers/src/sx1276/sx1276.c
 		../../common/ioLibrary_Driver/Ethernet/W5500/w5500.c
 		../../common/ioLibrary_Driver/Ethernet/socket.c
@@ -71,6 +72,7 @@ add_executable(
 
 target_include_directories(${EXECUTABLE} PRIVATE
 		../application
+		../../common/ic_drivers/src/ds18b20
 		../../common/ic_drivers/src/sx1276
 		../../common/ioLibrary_Driver/Ethernet/W5500
 		../../common/ioLibrary_Driver/Ethernet

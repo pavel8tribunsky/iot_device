@@ -25,6 +25,7 @@
     "cortex-debug.armToolchainPath": "C:/arm_development_tools/arm_gnu_toolchain-13.2.1/bin",
     "cortex-debug.openocdPath": "C:/arm_development_tools/openocd-0.12.0/bin/openocd.exe",
     "files.associations": {
-        "usart.h": "c"
+        "usart.h": "c",
+        "app_general.h": "c"
     }
 }
