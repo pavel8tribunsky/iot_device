@@ -12,10 +12,12 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 add_executable(
         ${EXECUTABLE}
 		../application/app_general.c
+		core/Src/adc.c
 		core/src/board_specific.c
 		core/Src/crc.c
 		core/Src/gpio.c
 		core/Src/main.c
+		core/Src/rtc.c
 		core/Src/spi.c
 		core/Src/stm32f4xx_hal_msp.c
 		core/Src/stm32f4xx_it.c
@@ -31,6 +33,8 @@ add_executable(
 		../../common/ioLibrary_Driver/Ethernet/wizchip_conf.c
 		../../common/ioLibrary_Driver/Internet/DHCP/dhcp.c
 		../../common/ioLibrary_Driver/Internet/DNS/dns.c
+		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
@@ -46,11 +50,14 @@ add_executable(
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c
 		drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c
 		drivers/USB/middlewares/st/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
 		drivers/USB/middlewares/st/STM32_USB_Device_Library/Core/Src/usbd_core.c

@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2024 STMicroelectronics.
+  * Copyright (c) 2025 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -616,7 +616,6 @@ USBD_StatusTypeDef USBD_LL_SetTestMode(USBD_HandleTypeDef *pdev, uint8_t testmod
   */
 void *USBD_static_malloc(uint32_t size)
 {
-  (void)size;
   static uint32_t mem[(sizeof(USBD_CDC_HandleTypeDef)/4)+1];/* On 32-bit boundary */
   return mem;
 }
@@ -628,7 +627,7 @@ void *USBD_static_malloc(uint32_t size)
   */
 void USBD_static_free(void *p)
 {
-(void)p;
+
 }
 
 /**
