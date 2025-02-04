@@ -12,6 +12,10 @@
 # Intellij Idea, CLion, PyCharm, VS Code
 .idea
 **/*.code-workspace
+*.vc.db
+*.vc.db-shm
+*.vc.db-wal
+
 
 # Temporary
 tmp/
