@@ -27,11 +27,11 @@
       "type" : "cortex-debug",
       "servertype" : "openocd",
       "device" : "${config:device}",
-      "preLaunchTask" : "CMake: build",
+      // "preLaunchTask" : "CMake: build",
       //"preLaunchCommands" : [ "monitor arm semihosting enable" ],
       "preRestartCommands" : [ "load", "enable breakpoint", "monitor reset" ],
       "runToEntryPoint" : "main",
-      //"showDevDebugOutput" : "raw",
+      "showDevDebugOutput" : "raw",
       "svdFile" : "${config:svdFile}",
       "liveWatch": { "enabled": false, "samplesPerSecond": 4 },
       "configFiles": [ "interface/stlink.cfg", "target/${config:targetFamily}.cfg" ]
